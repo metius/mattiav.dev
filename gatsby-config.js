@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://www.mattiav.dev",
     title: "mattiav.dev",
   },
   plugins: [
@@ -8,6 +8,14 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
+    "gatsby-plugin-anchor-links",
+    // "gatsby-plugin-sass",
+    {
+        resolve: "gatsby-plugin-sass",
+        options: {
+          implementation: require("node-sass"),
+        }
+    },
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
